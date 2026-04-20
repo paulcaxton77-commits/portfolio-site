@@ -1,0 +1,42 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+header { padding: 50px 20px; background: #f4f4f4; }
+.card-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 20px; }
+.card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 200px; }
+
+/* Calculator Specific */
+.tool-section { padding: 40px 20px; background: #fdfdfd; }
+.calculator-card { 
+    max-width: 400px; 
+    margin: 0 auto; 
+    padding: 25px; 
+    background: white; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+}
+input, select { width: 90%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+
+/* Buttons */
+.btn, .calc-btn { background: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; }
+.whatsapp-btn { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 30px; display: inline-block; margin-top: 20px; font-weight: bold; }
+
+/* Dark Mode Logic */
+.dark-mode { background-color: #1a1a1a !important; color: #ffffff !important; }
+.dark-mode header, .dark-mode .calculator-card { background-color: #2d2d2d !important; color: white !important; }
+.dark-mode .tool-section { background-color: #1a1a1a; }
+
+.result-box { margin-top: 20px; font-weight: bold; color: #27ae60; }
+
+
+
+
+.bundle-card {
+    border-top: 5px solid #8e44ad; /* Purple for data/internet vibe */
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Caxton | Digital Solutions & Automation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #7c3aed;
+            --glass: rgba(255, 255, 255, 0.1);
+            --text: #ffffff;
+            --bg: #0f172a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Hero Section with Gradient */
+        header.hero {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: radial-gradient(circle at top right, #1e293b, #0f172a);
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cta-buttons {
+            margin-top: 30px;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-secondary { border: 1px solid var(--secondary); color: white; }
+
+        /* Services Grid - Glassmorphism */
+        .services-section { padding: 80px 20px; max-width: 1100px; margin: auto; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, min-minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border: 1px solid var(--secondary);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: #60a5fa;
+            margin-bottom: 15px;
+        }
+
+        /* KPLC Standalone Teaser */
+        .featured-tool {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            padding: 60px 20px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Digital Solutions & <br>Automation Architect</h1>
+            <p>High-performance web tools & Python automation for East African businesses.</p>
+            <div class="cta-buttons">
+                <a href="#services" class="btn-primary">View Services</a>
+                <a href="#kplc" class="btn-secondary">Check KPLC Saver</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="services-section">
+        <h2 class="section-title">Professional Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-robot"></i>
+                <h3>WhatsApp Automation</h3>
+                <p>Custom bots for order-taking, customer support, and auto-replies to scale your business operations in Nakuru and beyond.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-calculator"></i>
+                <h3>Financial Utility Tools</h3>
+                <p>Custom-built calculators (KPLC, M-Pesa, Agribusiness ROI) designed to give users clarity on their spending.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+                <h3>Python Scripting</h3>
+                <p>Automating repetitive web tasks, data scraping, and local file management to save you hours of manual work.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kplc" class="featured-tool">
+        <h2>KPLC Saver Pro</h2>
+        <p>Our flagship tool helps Kenyans avoid expensive power tiers and plan their budgets better.</p>
+        <a href="kplc-saver/index.html" class="btn-primary" style="background: #e67e22;">Launch Standalone App</a>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; color: gray;">
+        <p>&copy; 2026 Paul Caxton. Built with Python & JS at 4 AM.</p>
+    </footer>
+
+</body>
+</html>
